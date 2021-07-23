@@ -15,8 +15,14 @@ body {
     padding: 20px;
     height: 80vh;
     margin: 2vh 0;
-    background-color: var(--teamsBgColour);
     box-shadow: 0 0 30px #ffd7233a;
+    border-radius: 10px;
+    background-color: var(--teamsBgColour);
+
+}
+
+.teamsIntro h2{
+    font-weight: 700;
 }
 
 .col-8 {

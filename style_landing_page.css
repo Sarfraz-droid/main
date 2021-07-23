@@ -45,7 +45,13 @@ body::-webkit-scrollbar{
     padding: 70px;
     position: relative;
 }
-
+.bg-img{
+    position: fixed;
+    z-index: -2;
+    left: 0;
+    transform: scale(1.05);
+    top: 0;
+}
 #top-svg{
     position: absolute;
     top: 0;
