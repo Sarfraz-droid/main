@@ -1,15 +1,15 @@
 // When the page loads, Hide all the div which show the images of the team members
-$(".teamMembers").hide();
+// $(".teamMembers").hide();
 
 // Toggle Slide up and down when the team members button is clicked
 $("#mlTeamBtn").click(function () {
-    $("#mlTeam").slideToggle();
+    $("#mlTeam").toggleClass("teamMembers-active");
 });
 
 $("#dsaTeamBtn").click(function () {
-    $("#dsaTeam").slideToggle();
+    $("#dsaTeam").toggleClass("dsamembers-active");
 });
 
 $("#webdTeamBtn").click(function () {
-    $("#webdTeam").slideToggle();
+    $("#webdTeam").toggleClass("teamMembers-active");
 });
