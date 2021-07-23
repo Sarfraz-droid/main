@@ -31,8 +31,7 @@
   position: fixed;
   z-index: 1200;
   width: auto;
-  top: 1em;
-  right: 1em;
+  padding: 1em 1em 1em 1em;
   -webkit-transition: all 0.7s ease;
   -moz-transition: all 0.7s ease;
   -ms-transition: all 0.7s ease;
@@ -42,8 +41,7 @@
 
 .nav-right {
   position: fixed;
-  right: 40px;
-  top: 20px;
+  right: 60px;
 }
 
 .nav-right.visible-xs {

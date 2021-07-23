@@ -45,6 +45,13 @@ $(document).ready(function () {
 
   $(".nav-right .button").on("click tap", function () {
     toggleSidebar();
+    debugger;
+    if ($(".nav-right .button").css("background-color").toString() == "rgba(44, 46, 67, 0.227)") {
+      console.log($(".nav-right .button").css("background-color").toString());
+      $(".nav-right .button").css("background-color", "transparent");
+    } else {
+      $(".nav-right .button").css("background-color", "#2c2e4348");
+    }
   });
   $(".sidebar-item").on("click tap", function () {
     toggleSidebar();
@@ -140,7 +147,7 @@ function sendPostContent() {
 // BACK TO TOP
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
-
+let nav = $(".nav-right .button");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
@@ -152,8 +159,12 @@ function scrollFunction() {
     document.documentElement.scrollTop > 20
   ) {
     mybutton.style.display = "block";
+    nav.css("background-color","#2c2e4348");
+    
   } else {
     mybutton.style.display = "none";
+    nav.css("background-color","transparent");
+
   }
 }
 // When the user clicks on the button, scroll to the top of the document
